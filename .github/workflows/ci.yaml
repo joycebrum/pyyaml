@@ -11,6 +11,9 @@ on:
     types: [opened, synchronize, edited, reopened]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 env:
   LIBYAML_REPO: https://github.com/yaml/libyaml
   LIBYAML_REF: 0.2.5
